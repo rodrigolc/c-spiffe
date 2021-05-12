@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['https_5fspiffe_1734',['HTTPS_SPIFFE',['../structspiffebundle__Endpoint.html#a7ec9ccded790bd2d80e9407766604302aac85185eaef3beb1ff03afd332854a94',1,'spiffebundle_Endpoint']]],
-  ['https_5fweb_1735',['HTTPS_WEB',['../structspiffebundle__Endpoint.html#a7ec9ccded790bd2d80e9407766604302a8874878945007ff44ee597b89fab25b7',1,'spiffebundle_Endpoint']]]
+  ['https_5fspiffe_1738',['HTTPS_SPIFFE',['../endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18a6064e2f5e96f3ef9085fc96a7eab1dec',1,'endpoint.h']]],
+  ['https_5fweb_1739',['HTTPS_WEB',['../endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18aff5eb9f9a5bd447603bd44da98660647',1,'endpoint.h']]]
 ];

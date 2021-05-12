@@ -70,41 +70,42 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">endpoint.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="id_8h_source.html">spiffeid/src/id.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="trustdomain_8h_source.html">spiffeid/src/trustdomain.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="utils_2src_2util_8h_source.html">utils/src/util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="spiffebundle_2src_2bundle_8h_source.html">bundle/spiffebundle/src/bundle.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="spiffebundle_2src_2bundle_8h_source.html">bundle/spiffebundle/src/bundle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spiffebundle_2src_2set_8h_source.html">bundle/spiffebundle/src/set.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bundle_2spiffebundle_2src_2source_8h_source.html">bundle/spiffebundle/src/source.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="id_8h_source.html">spiffeid/src/id.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="trustdomain_8h_source.html">spiffeid/src/trustdomain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_2src_2util_8h_source.html">utils/src/util.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for endpoint.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="endpoint_8h__incl.png" border="0" usemap="#afederation_2src_2endpoint_8h" alt=""/></div>
 <map name="afederation_2src_2endpoint_8h" id="afederation_2src_2endpoint_8h">
-<area shape="rect" title=" " alt="" coords="270,5,434,32"/>
-<area shape="rect" href="id_8h.html" title=" " alt="" coords="680,512,789,539"/>
-<area shape="rect" href="utils_2src_2util_8h.html" title=" " alt="" coords="303,587,401,613"/>
-<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="147,437,314,464"/>
-<area shape="rect" href="spiffebundle_2src_2bundle_8h.html" title=" " alt="" coords="285,259,419,300"/>
-<area shape="rect" href="spiffebundle_2src_2set_8h.html" title=" " alt="" coords="389,169,523,211"/>
-<area shape="rect" href="bundle_2spiffebundle_2src_2source_8h.html" title=" " alt="" coords="285,80,419,121"/>
-<area shape="rect" title=" " alt="" coords="615,661,689,688"/>
-<area shape="rect" title=" " alt="" coords="594,587,697,613"/>
-<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="193,661,314,688"/>
-<area shape="rect" title=" " alt="" coords="317,736,381,763"/>
-<area shape="rect" title=" " alt="" coords="390,661,493,688"/>
-<area shape="rect" title=" " alt="" coords="133,736,201,763"/>
-<area shape="rect" title=" " alt="" coords="225,736,287,763"/>
-<area shape="rect" href="jwtbundle_2src_2bundle_8h.html" title=" " alt="" coords="553,348,695,389"/>
-<area shape="rect" title=" " alt="" coords="523,437,597,464"/>
-<area shape="rect" href="x509bundle_2src_2bundle_8h.html" title=" " alt="" coords="277,348,427,389"/>
-<area shape="rect" title=" " alt="" coords="390,437,498,464"/>
-<area shape="rect" title=" " alt="" coords="195,355,253,382"/>
+<area shape="rect" title=" " alt="" coords="78,5,242,32"/>
+<area shape="rect" href="spiffebundle_2src_2bundle_8h.html" title=" " alt="" coords="276,259,409,300"/>
+<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="169,437,335,464"/>
+<area shape="rect" href="utils_2src_2util_8h.html" title=" " alt="" coords="193,587,292,613"/>
+<area shape="rect" href="id_8h.html" title=" " alt="" coords="423,512,532,539"/>
+<area shape="rect" href="spiffebundle_2src_2set_8h.html" title=" " alt="" coords="56,169,189,211"/>
+<area shape="rect" href="bundle_2spiffebundle_2src_2source_8h.html" title=" " alt="" coords="93,80,227,121"/>
+<area shape="rect" href="jwtbundle_2src_2bundle_8h.html" title=" " alt="" coords="628,348,769,389"/>
+<area shape="rect" title=" " alt="" coords="553,437,628,464"/>
+<area shape="rect" href="x509bundle_2src_2bundle_8h.html" title=" " alt="" coords="270,348,421,389"/>
+<area shape="rect" title=" " alt="" coords="417,437,525,464"/>
+<area shape="rect" title=" " alt="" coords="445,355,502,382"/>
+<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="297,661,418,688"/>
+<area shape="rect" title=" " alt="" coords="168,736,232,763"/>
+<area shape="rect" title=" " alt="" coords="170,661,273,688"/>
+<area shape="rect" title=" " alt="" coords="443,661,517,688"/>
+<area shape="rect" title=" " alt="" coords="367,736,435,763"/>
+<area shape="rect" title=" " alt="" coords="281,736,343,763"/>
+<area shape="rect" title=" " alt="" coords="339,587,442,613"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -130,15 +131,25 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a17e894c34a73620db318565b1a8feec7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structspiffebundle__Source.html">spiffebundle_Source</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#a17e894c34a73620db318565b1a8feec7">spiffebundle_Source</a></td></tr>
 <tr class="separator:a17e894c34a73620db318565b1a8feec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e9592e9c7bc602cc7bc258f0fe3f0a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18">spiffebundle_Endpoint_Profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#a91e9592e9c7bc602cc7bc258f0fe3f0a">spiffebundle_Endpoint_Profile</a></td></tr>
+<tr class="separator:a91e9592e9c7bc602cc7bc258f0fe3f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b07431a551bce34834e79d17511537"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#ab1b07431a551bce34834e79d17511537">spiffebundle_Endpoint</a></td></tr>
 <tr class="separator:ab1b07431a551bce34834e79d17511537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aa940ea32ff440076df24fd16b6998c18"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18">spiffebundle_Endpoint_Profile</a> { <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> = 0
+, <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18aff5eb9f9a5bd447603bd44da98660647">HTTPS_WEB</a>
+, <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18a6064e2f5e96f3ef9085fc96a7eab1dec">HTTPS_SPIFFE</a>
+ }</td></tr>
+<tr class="separator:aa940ea32ff440076df24fd16b6998c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2ced20e06e5add5bcba32eddc33396cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#a2ced20e06e5add5bcba32eddc33396cf">spiffebundle_Endpoint_New</a> ()</td></tr>
 <tr class="separator:a2ced20e06e5add5bcba32eddc33396cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe34dacd104e4c164e09be1fc6d74957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#abe34dacd104e4c164e09be1fc6d74957">spiffebundle_Endpoint_Free</a> (<a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *endpoint)</td></tr>
-<tr class="separator:abe34dacd104e4c164e09be1fc6d74957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f030a3055f1ace0f637d9bc6a0c4e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#a12f030a3055f1ace0f637d9bc6a0c4e7">spiffebundle_Endpoint_Free</a> (<a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *endpoint)</td></tr>
+<tr class="separator:a12f030a3055f1ace0f637d9bc6a0c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab437316e4ae225dde86405439f28aea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#ab437316e4ae225dde86405439f28aea5">spiffebundle_Endpoint_Config_HTTPS_WEB</a> (<a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *endpoint, <a class="el" href="utils_2src_2util_8h.html#ab0dcbec9b4b3c60b939b1095f93cb1b9">string_t</a> url, <a class="el" href="structspiffeid__TrustDomain.html">spiffeid_TrustDomain</a> trust_domain)</td></tr>
 <tr class="separator:ab437316e4ae225dde86405439f28aea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6de572046cc05ae305e12c737fc18c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="endpoint_8h.html#aa6de572046cc05ae305e12c737fc18c2">spiffebundle_Endpoint_Config_HTTPS_SPIFFE</a> (<a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *endpoint, <a class="el" href="utils_2src_2util_8h.html#ab0dcbec9b4b3c60b939b1095f93cb1b9">string_t</a> url, <a class="el" href="structspiffeid__TrustDomain.html">spiffeid_TrustDomain</a> trust_domain, <a class="el" href="structspiffeid__ID.html">spiffeid_ID</a> spiffeid, <a class="el" href="structspiffebundle__Source.html">spiffebundle_Source</a> *source)</td></tr>
@@ -163,6 +174,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a91e9592e9c7bc602cc7bc258f0fe3f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e9592e9c7bc602cc7bc258f0fe3f0a">&#9670;&nbsp;</a></span>spiffebundle_Endpoint_Profile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18">spiffebundle_Endpoint_Profile</a> <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18">spiffebundle_Endpoint_Profile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a17e894c34a73620db318565b1a8feec7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17e894c34a73620db318565b1a8feec7">&#9670;&nbsp;</a></span>spiffebundle_Source</h2>
 
@@ -174,6 +199,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aa940ea32ff440076df24fd16b6998c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa940ea32ff440076df24fd16b6998c18">&#9670;&nbsp;</a></span>spiffebundle_Endpoint_Profile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18">spiffebundle_Endpoint_Profile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa940ea32ff440076df24fd16b6998c18ac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa940ea32ff440076df24fd16b6998c18aff5eb9f9a5bd447603bd44da98660647"></a>HTTPS_WEB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa940ea32ff440076df24fd16b6998c18a6064e2f5e96f3ef9085fc96a7eab1dec"></a>HTTPS_SPIFFE&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -276,14 +321,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abe34dacd104e4c164e09be1fc6d74957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe34dacd104e4c164e09be1fc6d74957">&#9670;&nbsp;</a></span>spiffebundle_Endpoint_Free()</h2>
+<a id="a12f030a3055f1ace0f637d9bc6a0c4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f030a3055f1ace0f637d9bc6a0c4e7">&#9670;&nbsp;</a></span>spiffebundle_Endpoint_Free()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a> spiffebundle_Endpoint_Free </td>
+          <td class="memname">void spiffebundle_Endpoint_Free </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structspiffebundle__Endpoint.html">spiffebundle_Endpoint</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em></td><td>)</td>

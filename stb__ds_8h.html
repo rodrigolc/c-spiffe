@@ -376,9 +376,9 @@ Macros</h2></td></tr>
 <tr class="separator:a0c457e9e33529d122edf6eb9696dd688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405088e5be97f1b3966a140e80842b42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#a405088e5be97f1b3966a140e80842b42">stbds_pshdel</a>(t,  k)&#160;&#160;&#160;    (((t) = <a class="el" href="stb__ds_8h.html#a388c44ff27851ac0dbab40d741085207">stbds_hmdel_key_wrapper</a>((t),sizeof *(t), (void*) (k), sizeof (*(t))-&gt;key, <a class="el" href="stb__ds_8h.html#a926f2f73e16c4bb2e9bc305b1e36be84">STBDS_OFFSETOF</a>(*(t),key), STBDS_HM_PTR_TO_STRING)),(t)?<a class="el" href="stb__ds_8h.html#a0340efaacfbd9d7ed4c8ce779870476b">stbds_temp</a>((t)-1):0)</td></tr>
 <tr class="separator:a405088e5be97f1b3966a140e80842b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0818e59dc8e28eb52d2c00a956fa7e14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#a0818e59dc8e28eb52d2c00a956fa7e14">stbds_sh_new_arena</a>(t)&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600acc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>))</td></tr>
+<tr class="memitem:a0818e59dc8e28eb52d2c00a956fa7e14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#a0818e59dc8e28eb52d2c00a956fa7e14">stbds_sh_new_arena</a>(t)&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2dacc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>))</td></tr>
 <tr class="separator:a0818e59dc8e28eb52d2c00a956fa7e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733a5432300b2ae1eb61a9ece509b214"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#a733a5432300b2ae1eb61a9ece509b214">stbds_sh_new_strdup</a>(t)&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600a0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>))</td></tr>
+<tr class="memitem:a733a5432300b2ae1eb61a9ece509b214"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#a733a5432300b2ae1eb61a9ece509b214">stbds_sh_new_strdup</a>(t)&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>))</td></tr>
 <tr class="separator:a733a5432300b2ae1eb61a9ece509b214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e0c3c67fb5f4b25f01fa6d881d3c73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__ds_8h.html#ac6e0c3c67fb5f4b25f01fa6d881d3c73">stbds_shdefault</a>(t,  v)&#160;&#160;&#160;<a class="el" href="stb__ds_8h.html#a459525fd9cfbbba8c275a58229e1e35b">stbds_hmdefault</a>(t,v)</td></tr>
 <tr class="separator:ac6e0c3c67fb5f4b25f01fa6d881d3c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,12 +424,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abed82baf7f470b522273a3e37c24c600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600a59182471de92e24b86ffad093024442a">STBDS_SH_NONE</a>
-, <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600a8e3b6ebef25ad0cd1671d1907f674b33">STBDS_SH_DEFAULT</a>
-, <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600a0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>
-, <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600acc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>
+<tr class="memitem:a0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da59182471de92e24b86ffad093024442a">STBDS_SH_NONE</a>
+, <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da8e3b6ebef25ad0cd1671d1907f674b33">STBDS_SH_DEFAULT</a>
+, <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>
+, <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2dacc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>
  }</td></tr>
-<tr class="separator:abed82baf7f470b522273a3e37c24c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2541,7 +2541,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">t</td><td>)</td>
-          <td>&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600acc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>))</td>
+          <td>&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2dacc00a7d3e35d4cf49876ccd28090d822">STBDS_SH_ARENA</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2559,7 +2559,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">t</td><td>)</td>
-          <td>&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#abed82baf7f470b522273a3e37c24c600a0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>))</td>
+          <td>&#160;&#160;&#160;    ((t) = <a class="el" href="stb__ds_8h.html#a569a8cf4741be33207e2fc5b22c10c7c">stbds_shmode_func_wrapper</a>(t, sizeof *(t), <a class="el" href="stb__ds_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da0f3b4e19006b798f5f57bb959fa436a7">STBDS_SH_STRDUP</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3067,8 +3067,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="abed82baf7f470b522273a3e37c24c600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed82baf7f470b522273a3e37c24c600">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a0411cd49bb5b71852cecd93bcbf0ca2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0411cd49bb5b71852cecd93bcbf0ca2d">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3079,10 +3079,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abed82baf7f470b522273a3e37c24c600a59182471de92e24b86ffad093024442a"></a>STBDS_SH_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abed82baf7f470b522273a3e37c24c600a8e3b6ebef25ad0cd1671d1907f674b33"></a>STBDS_SH_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abed82baf7f470b522273a3e37c24c600a0f3b4e19006b798f5f57bb959fa436a7"></a>STBDS_SH_STRDUP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abed82baf7f470b522273a3e37c24c600acc00a7d3e35d4cf49876ccd28090d822"></a>STBDS_SH_ARENA&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0411cd49bb5b71852cecd93bcbf0ca2da59182471de92e24b86ffad093024442a"></a>STBDS_SH_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0411cd49bb5b71852cecd93bcbf0ca2da8e3b6ebef25ad0cd1671d1907f674b33"></a>STBDS_SH_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0411cd49bb5b71852cecd93bcbf0ca2da0f3b4e19006b798f5f57bb959fa436a7"></a>STBDS_SH_STRDUP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0411cd49bb5b71852cecd93bcbf0ca2dacc00a7d3e35d4cf49876ccd28090d822"></a>STBDS_SH_ARENA&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

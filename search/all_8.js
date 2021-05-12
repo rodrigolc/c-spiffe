@@ -22,6 +22,6 @@ var searchData=
   ['hmputs_205',['hmputs',['../stb__ds_8h.html#ad687321043a6b1c83bdee35ea64c39b5',1,'stb_ds.h']]],
   ['hookmtlsclientconfig_5fst_206',['hookMTLSClientConfig_st',['../structhookMTLSClientConfig__st.html',1,'']]],
   ['hooktlsclientconfig_5fst_207',['hookTLSClientConfig_st',['../structhookTLSClientConfig__st.html',1,'']]],
-  ['https_5fspiffe_208',['HTTPS_SPIFFE',['../structspiffebundle__Endpoint.html#a7ec9ccded790bd2d80e9407766604302aac85185eaef3beb1ff03afd332854a94',1,'spiffebundle_Endpoint']]],
-  ['https_5fweb_209',['HTTPS_WEB',['../structspiffebundle__Endpoint.html#a7ec9ccded790bd2d80e9407766604302a8874878945007ff44ee597b89fab25b7',1,'spiffebundle_Endpoint']]]
+  ['https_5fspiffe_208',['HTTPS_SPIFFE',['../endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18a6064e2f5e96f3ef9085fc96a7eab1dec',1,'endpoint.h']]],
+  ['https_5fweb_209',['HTTPS_WEB',['../endpoint_8h.html#aa940ea32ff440076df24fd16b6998c18aff5eb9f9a5bd447603bd44da98660647',1,'endpoint.h']]]
 ];
