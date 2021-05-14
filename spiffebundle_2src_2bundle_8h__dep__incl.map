@@ -1,10 +1,6 @@
 <map id="bundle/spiffebundle/src/bundle.h" name="bundle/spiffebundle/src/bundle.h">
-<area shape="rect" id="node1" title=" " alt="" coords="161,5,295,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="84,5,217,47"/>
 <area shape="rect" id="node2" href="$spiffebundle_2src_2bundle_8c.html" title=" " alt="" coords="5,95,139,136"/>
-<area shape="rect" id="node3" href="$spiffebundle_2src_2set_8h.html" title=" " alt="" coords="213,95,347,136"/>
-<area shape="rect" id="node5" href="$bundle_2spiffebundle_2src_2source_8h.html" title=" " alt="" coords="56,184,189,225"/>
-<area shape="rect" id="node7" href="$endpoint_8h.html" title=" " alt="" coords="258,281,422,307"/>
-<area shape="rect" id="node4" href="$spiffebundle_2src_2set_8c.html" title=" " alt="" coords="213,184,347,225"/>
-<area shape="rect" id="node6" href="$bundle_2spiffebundle_2src_2source_8c.html" title=" " alt="" coords="56,273,189,315"/>
-<area shape="rect" id="node8" href="$endpoint_8c.html" title=" " alt="" coords="258,363,422,389"/>
+<area shape="rect" id="node3" href="$spiffebundle_2src_2set_8h.html" title=" " alt="" coords="163,95,296,136"/>
+<area shape="rect" id="node4" href="$spiffebundle_2src_2set_8c.html" title=" " alt="" coords="163,184,296,225"/>
 </map>
