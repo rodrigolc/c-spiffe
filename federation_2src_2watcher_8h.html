@@ -83,8 +83,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="trustdomain_8h_source.html">spiffeid/src/trustdomain.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="utils_2src_2util_8h_source.html">utils/src/util.h</a>&quot;</code><br />
 <code>#include &lt;curl/curl.h&gt;</code><br />
-<code>#include &lt;uriparser/Uri.h&gt;</code><br />
 <code>#include &lt;threads.h&gt;</code><br />
+<code>#include &lt;uriparser/Uri.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for watcher.h:</div>
 <div class="dyncontent">
@@ -130,7 +130,7 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspiffebundle__Endpoint__Status.html">spiffebundle_Endpoint_Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmap__TD__Endpoint__Status.html">map_TD_Endpoint_Status</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmap__string__Endpoint__Status.html">map_string_Endpoint_Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,8 +139,8 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a75f47b4dad1ce4244d2c0e37bfedc56e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structspiffebundle__Endpoint__Status.html">spiffebundle_Endpoint_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#a75f47b4dad1ce4244d2c0e37bfedc56e">spiffebundle_Endpoint_Status</a></td></tr>
 <tr class="separator:a75f47b4dad1ce4244d2c0e37bfedc56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2919e55c7cdbf2c60bf0fe32d1ee4bc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmap__TD__Endpoint__Status.html">map_TD_Endpoint_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#ad2919e55c7cdbf2c60bf0fe32d1ee4bc">map_TD_Endpoint_Status</a></td></tr>
-<tr class="separator:ad2919e55c7cdbf2c60bf0fe32d1ee4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920a2f82cea09f9c17e270689b8b1145"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmap__string__Endpoint__Status.html">map_string_Endpoint_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#a920a2f82cea09f9c17e270689b8b1145">map_string_Endpoint_Status</a></td></tr>
+<tr class="separator:a920a2f82cea09f9c17e270689b8b1145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a674b78e07b7f00c015d10f45d8eb4905"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#a674b78e07b7f00c015d10f45d8eb4905">spiffebundle_Watcher</a></td></tr>
 <tr class="separator:a674b78e07b7f00c015d10f45d8eb4905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -162,16 +162,18 @@ Functions</h2></td></tr>
 <tr class="separator:ad1c6689639697291c6bcc60b5dc6e9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27e12058b4e2aa2366c707cc296f6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structspiffebundle__Bundle.html">spiffebundle_Bundle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#ad27e12058b4e2aa2366c707cc296f6b1">spiffebundle_Watcher_GetBundleForTrustDomain</a> (<a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a> *<a class="el" href="workload_2tests_2check__watcher_8c.html#aa38fc9fc816048bc443c79655f9704ed">watcher</a>, const <a class="el" href="structspiffeid__TrustDomain.html">spiffeid_TrustDomain</a> <a class="el" href="check__x509source_8c.html#af961692354eb34b5aacc2fedfbdb664c">td</a>, <a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a> *<a class="el" href="check__endpoint_8c.html#aac2cb6376062ef4d6f16d129f52ea9e4">err</a>)</td></tr>
 <tr class="separator:ad27e12058b4e2aa2366c707cc296f6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9ecd9016c2094daf5f4eff03939dce"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="federation_2src_2watcher_8h.html#aca9ecd9016c2094daf5f4eff03939dce">spiffebundle_Watcher_GetStatus</a> (<a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a> *<a class="el" href="workload_2tests_2check__watcher_8c.html#aa38fc9fc816048bc443c79655f9704ed">watcher</a>, const <a class="el" href="structspiffeid__TrustDomain.html">spiffeid_TrustDomain</a> <a class="el" href="check__x509source_8c.html#af961692354eb34b5aacc2fedfbdb664c">td</a>, <a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a> *<a class="el" href="check__endpoint_8c.html#aac2cb6376062ef4d6f16d129f52ea9e4">err</a>)</td></tr>
+<tr class="separator:aca9ecd9016c2094daf5f4eff03939dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad2919e55c7cdbf2c60bf0fe32d1ee4bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2919e55c7cdbf2c60bf0fe32d1ee4bc">&#9670;&nbsp;</a></span>map_TD_Endpoint_Status</h2>
+<a id="a920a2f82cea09f9c17e270689b8b1145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920a2f82cea09f9c17e270689b8b1145">&#9670;&nbsp;</a></span>map_string_Endpoint_Status</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structmap__TD__Endpoint__Status.html">map_TD_Endpoint_Status</a> <a class="el" href="structmap__TD__Endpoint__Status.html">map_TD_Endpoint_Status</a></td>
+          <td class="memname">typedef struct <a class="el" href="structmap__string__Endpoint__Status.html">map_string_Endpoint_Status</a> <a class="el" href="structmap__string__Endpoint__Status.html">map_string_Endpoint_Status</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,6 +315,40 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structspiffebundle__Bundle.html">spiffebundle_Bundle</a>* spiffebundle_Watcher_GetBundleForTrustDomain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a> *&#160;</td>
+          <td class="paramname"><em>watcher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structspiffeid__TrustDomain.html">spiffeid_TrustDomain</a>&#160;</td>
+          <td class="paramname"><em>td</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="utils_2src_2util_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a> *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca9ecd9016c2094daf5f4eff03939dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9ecd9016c2094daf5f4eff03939dce">&#9670;&nbsp;</a></span>spiffebundle_Watcher_GetStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* spiffebundle_Watcher_GetStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structspiffebundle__Watcher.html">spiffebundle_Watcher</a> *&#160;</td>
           <td class="paramname"><em>watcher</em>, </td>
