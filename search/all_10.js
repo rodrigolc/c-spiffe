@@ -21,7 +21,8 @@ var searchData=
   ['picker_407',['picker',['../structworkloadapi__X509SourceConfig.html#a73f803da381a3086065059cbb9965c80',1,'workloadapi_X509SourceConfig::picker()'],['../check__x509source_8c.html#ad67de831a655cb3c927d35ab6ddf58af',1,'picker():&#160;check_x509source.c']]],
   ['print_5fforever_408',['print_forever',['../jwtsource__example_8c.html#aa78329a911b8c6cfe5159e84bd9a7ca8',1,'jwtsource_example.c']]],
   ['print_5ffunction_409',['print_function',['../watch__jwt__bundles_8c.html#a887518f563a7327daaf0622c1b4ef3b8',1,'watch_jwt_bundles.c']]],
-  ['private_5fkey_410',['private_key',['../structx509svid__SVID.html#a0660547fc6855e1151c2bba77e3fd781',1,'x509svid_SVID::private_key()'],['../check__x509source_8c.html#a2d1001cc0b7e35da75f4a4de30eaffce',1,'private_key():&#160;check_x509source.c']]],
-  ['profile_411',['profile',['../structspiffebundle__Endpoint.html#a095292f6fd2f8f37275974991d8b5f4e',1,'spiffebundle_Endpoint']]],
-  ['protos_412',['Protos',['../md_protos_README.html',1,'']]]
+  ['print_5fwatcher_410',['print_watcher',['../watcher__example_8c.html#a37df4a0b6b2fa5900c2738c687a3ece0',1,'watcher_example.c']]],
+  ['private_5fkey_411',['private_key',['../check__x509source_8c.html#a2d1001cc0b7e35da75f4a4de30eaffce',1,'private_key():&#160;check_x509source.c'],['../structx509svid__SVID.html#a0660547fc6855e1151c2bba77e3fd781',1,'x509svid_SVID::private_key()']]],
+  ['profile_412',['profile',['../structspiffebundle__Endpoint.html#a095292f6fd2f8f37275974991d8b5f4e',1,'spiffebundle_Endpoint']]],
+  ['protos_413',['Protos',['../md_protos_README.html',1,'']]]
 ];
