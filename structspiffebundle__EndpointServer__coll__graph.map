@@ -1,0 +1,26 @@
+<map id="spiffebundle_EndpointServer" name="spiffebundle_EndpointServer">
+<area shape="rect" id="node1" title=" " alt="" coords="2463,159,2649,186"/>
+<area shape="rect" id="node24" href="$structserver__thread__info.html" title=" " alt="" coords="2737,190,2867,217"/>
+<area shape="rect" id="node2" href="$structx509svid__Source.html" title=" " alt="" coords="2220,194,2341,221"/>
+<area shape="rect" id="node3" href="$structx509svid__SVID.html" title=" " alt="" coords="775,246,885,273"/>
+<area shape="rect" id="node6" href="$structworkloadapi__X509Source.html" title=" " alt="" coords="1960,337,2129,363"/>
+<area shape="rect" id="node10" href="$structworkloadapi__X509SourceConfig.html" title=" " alt="" coords="1657,421,1863,447"/>
+<area shape="rect" id="node15" href="$structworkloadapi__X509Context.html" title=" " alt="" coords="1005,307,1177,334"/>
+<area shape="rect" id="node4" href="$structspiffeid__ID.html" title=" " alt="" coords="536,205,619,231"/>
+<area shape="rect" id="node18" href="$structspiffebundle__Endpoint.html" title=" " alt="" coords="756,153,904,179"/>
+<area shape="rect" id="node5" href="$structspiffeid__TrustDomain.html" title=" " alt="" coords="14,178,158,205"/>
+<area shape="rect" id="node9" href="$structx509bundle__Bundle.html" title=" " alt="" coords="277,267,411,294"/>
+<area shape="rect" id="node19" href="$structspiffebundle__Bundle.html" title=" " alt="" coords="275,67,413,94"/>
+<area shape="rect" id="node7" href="$structx509bundle__Set.html" title=" " alt="" coords="773,326,887,353"/>
+<area shape="rect" id="node8" href="$structmap__string__x509bundle__Bundle.html" title=" " alt="" coords="498,268,657,309"/>
+<area shape="rect" id="node11" href="$structworkloadapi__WatcherConfig.html" title=" " alt="" coords="1264,421,1447,447"/>
+<area shape="rect" id="node12" href="$structworkloadapi__Client.html" title=" " alt="" coords="1026,390,1157,417"/>
+<area shape="rect" id="node13" href="$structworkloadapi__Watcher.html" title=" " alt="" coords="1687,337,1833,363"/>
+<area shape="rect" id="node14" href="$structworkloadapi__X509Callback.html" title=" " alt="" coords="1266,307,1445,334"/>
+<area shape="rect" id="node16" href="$structmap__string__spiffebundle__Source.html" title=" " alt="" coords="1471,116,1633,157"/>
+<area shape="rect" id="node17" href="$structspiffebundle__Source.html" title=" " alt="" coords="1022,106,1161,133"/>
+<area shape="rect" id="node22" href="$structmap__string__spiffebundle__Bundle.html" title=" " alt="" coords="496,5,659,47"/>
+<area shape="rect" id="node20" href="$structmap__string__EVP__PKEY.html" title=" " alt="" coords="5,63,167,90"/>
+<area shape="rect" id="node21" href="$structspiffebundle__Set.html" title=" " alt="" coords="771,19,889,46"/>
+<area shape="rect" id="node23" href="$structmap__int__thread__info.html" title=" " alt="" coords="2949,159,3088,186"/>
+</map>
