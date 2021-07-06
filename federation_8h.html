@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C-SPIFFE Library: federation/federation.h File Reference</title>
+<title>C-SPIFFE Library: include/c-spiffe/federation/federation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_72406cc5bc472c339c9fc1fabe91fe27.html">federation</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_627fe8ff3a8667247b3daef3c2772854.html">c-spiffe</a></li><li class="navelem"><a class="el" href="dir_6784cbefdddad68d4c67b421999bbc3a.html">federation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,73 +71,35 @@ $(function() {
 <div class="title">federation.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="endpoint_8h_source.html">federation/endpoint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="federation_2watcher_8h_source.html">federation/watcher.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="server_8h_source.html">federation/server.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="endpoint_8h_source.html">c-spiffe/federation/endpoint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="federation_2watcher_8h_source.html">c-spiffe/federation/watcher.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for federation.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="federation_8h__incl.png" border="0" usemap="#afederation_2federation_8h" alt=""/></div>
-<map name="afederation_2federation_8h" id="afederation_2federation_8h">
-<area shape="rect" title=" " alt="" coords="75,5,226,32"/>
-<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="537,386,679,413"/>
-<area shape="rect" href="federation_2watcher_8h.html" title=" " alt="" coords="539,304,677,331"/>
-<area shape="rect" href="server_8h.html" title=" " alt="" coords="1022,80,1151,107"/>
-<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="956,647,1089,688"/>
-<area shape="rect" href="id_8h.html" title=" " alt="" coords="286,885,373,912"/>
-<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="1392,960,1469,987"/>
-<area shape="rect" title=" " alt="" coords="55,960,158,987"/>
-<area shape="rect" title=" " alt="" coords="667,811,741,837"/>
-<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="834,811,979,837"/>
-<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="1085,557,1219,599"/>
-<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="856,468,989,509"/>
-<area shape="rect" title=" " alt="" coords="297,475,375,502"/>
-<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="549,736,720,763"/>
-<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="1629,736,1811,763"/>
-<area shape="rect" title=" " alt="" coords="2178,885,2286,912"/>
-<area shape="rect" title=" " alt="" coords="1446,736,1503,763"/>
-<area shape="rect" title=" " alt="" coords="863,1035,937,1061"/>
-<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="1629,1035,1728,1061"/>
-<area shape="rect" title=" " alt="" coords="1467,1109,1531,1136"/>
-<area shape="rect" title=" " alt="" coords="2518,1035,2621,1061"/>
-<area shape="rect" title=" " alt="" coords="1645,1109,1713,1136"/>
-<area shape="rect" title=" " alt="" coords="2307,1109,2370,1136"/>
-<area shape="rect" href="spiffebundle_8h.html" title=" " alt="" coords="1015,386,1158,413"/>
-<area shape="rect" href="spiffeid_8h.html" title=" " alt="" coords="998,736,1117,763"/>
-<area shape="rect" href="spiffetls_8h.html" title=" " alt="" coords="1578,155,1705,181"/>
-<area shape="rect" href="x509svid_8h.html" title=" " alt="" coords="2219,229,2330,256"/>
-<area shape="rect" href="match_8h.html" title=" " alt="" coords="1055,811,1169,837"/>
-<area shape="rect" href="dial_8h.html" title=" " alt="" coords="1843,229,1944,256"/>
-<area shape="rect" href="mode_8h.html" title=" " alt="" coords="2067,304,2181,331"/>
-<area shape="rect" href="option_8h.html" title=" " alt="" coords="1497,304,1613,331"/>
-<area shape="rect" href="listen_8h.html" title=" " alt="" coords="1645,229,1757,256"/>
-<area shape="rect" href="peerid_8h.html" title=" " alt="" coords="1401,229,1517,256"/>
-<area shape="rect" href="authorizer_8h.html" title=" " alt="" coords="1642,379,1761,420"/>
-<area shape="rect" title=" " alt="" coords="1512,386,1611,413"/>
-<area shape="rect" title=" " alt="" coords="1739,304,1821,331"/>
-<area shape="rect" title=" " alt="" coords="1846,304,1941,331"/>
-<area shape="rect" href="bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="1922,386,2105,413"/>
-<area shape="rect" href="x509source_8h.html" title=" " alt="" coords="1936,475,2091,502"/>
-<area shape="rect" href="x509svid_2svid_8h.html" title=" " alt="" coords="2239,654,2377,681"/>
-<area shape="rect" href="certpool_8h.html" title=" " alt="" coords="1782,811,1954,837"/>
-<area shape="rect" href="svid_2x509svid_2source_8h.html" title=" " alt="" coords="2180,386,2335,413"/>
-<area shape="rect" href="x509bundle_2set_8h.html" title=" " alt="" coords="1987,654,2149,681"/>
-<area shape="rect" href="workload_2watcher_8h.html" title=" " alt="" coords="1887,565,2022,591"/>
-<area shape="rect" href="pem_8h.html" title=" " alt="" coords="2571,736,2720,763"/>
-<area shape="rect" href="internal_2x509util_2util_8h.html" title=" " alt="" coords="2161,736,2303,763"/>
-<area shape="rect" title=" " alt="" coords="2379,736,2495,763"/>
-<area shape="rect" title=" " alt="" coords="2037,736,2136,763"/>
-<area shape="rect" title=" " alt="" coords="2432,811,2555,837"/>
-<area shape="rect" href="verify_8h.html" title=" " alt="" coords="2256,304,2403,331"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="federation_8h__dep__incl.png" border="0" usemap="#afederation_2federation_8hdep" alt=""/></div>
-<map name="afederation_2federation_8hdep" id="afederation_2federation_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
-<area shape="rect" href="check__server_8c.html" title=" " alt="" coords="5,80,156,121"/>
+<div class="center"><img src="federation_8h__incl.png" border="0" usemap="#ainclude_2c-spiffe_2federation_2federation_8h" alt=""/></div>
+<map name="ainclude_2c-spiffe_2federation_2federation_8h" id="ainclude_2c-spiffe_2federation_2federation_8h">
+<area shape="rect" title=" " alt="" coords="545,5,715,47"/>
+<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="415,184,541,225"/>
+<area shape="rect" href="federation_2watcher_8h.html" title=" " alt="" coords="733,95,858,136"/>
+<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="527,452,706,493"/>
+<area shape="rect" href="id_8h.html" title=" " alt="" coords="94,705,227,732"/>
+<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="617,780,739,807"/>
+<area shape="rect" title=" " alt="" coords="5,780,108,807"/>
+<area shape="rect" title=" " alt="" coords="497,631,571,657"/>
+<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="843,631,1033,657"/>
+<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="679,363,858,404"/>
+<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="502,273,681,315"/>
+<area shape="rect" title=" " alt="" coords="756,281,835,307"/>
+<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="363,541,529,583"/>
+<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="655,541,829,583"/>
+<area shape="rect" title=" " alt="" coords="596,631,704,657"/>
+<area shape="rect" title=" " alt="" coords="853,549,911,575"/>
+<area shape="rect" title=" " alt="" coords="375,855,450,881"/>
+<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="753,855,899,881"/>
+<area shape="rect" title=" " alt="" coords="631,929,695,956"/>
+<area shape="rect" title=" " alt="" coords="627,855,729,881"/>
+<area shape="rect" title=" " alt="" coords="836,929,904,956"/>
+<area shape="rect" title=" " alt="" coords="749,929,812,956"/>
 </map>
 </div>
 </div>
