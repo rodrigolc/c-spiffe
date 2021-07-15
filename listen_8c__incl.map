@@ -1,11 +1,12 @@
 <map id="spiffetls/listen.c" name="spiffetls/listen.c">
-<area shape="rect" id="node1" title=" " alt="" coords="730,5,842,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="778,5,890,32"/>
 <area shape="rect" id="node2" href="$listen_8h.html" title=" " alt="" coords="683,80,796,121"/>
 <area shape="rect" id="node3" href="$mode_8h.html" title=" " alt="" coords="413,169,527,211"/>
 <area shape="rect" id="node36" href="$option_8h.html" title=" " alt="" coords="856,169,969,211"/>
 <area shape="rect" id="node39" href="$config_8h.html" title=" " alt="" coords="551,169,674,211"/>
-<area shape="rect" id="node40" title=" " alt="" coords="872,87,967,114"/>
-<area shape="rect" id="node41" title=" " alt="" coords="991,87,1058,114"/>
+<area shape="rect" id="node40" title=" " alt="" coords="872,87,948,114"/>
+<area shape="rect" id="node41" title=" " alt="" coords="972,87,1067,114"/>
+<area shape="rect" id="node42" title=" " alt="" coords="1091,87,1158,114"/>
 <area shape="rect" id="node37" title=" " alt="" coords="779,266,878,293"/>
 <area shape="rect" id="node38" title=" " alt="" coords="698,177,781,203"/>
 <area shape="rect" id="node4" href="$bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="257,259,432,300"/>

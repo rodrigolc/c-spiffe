@@ -74,66 +74,72 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="spiffebundle_8h_source.html">c-spiffe/bundle/spiffebundle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="federation_8h_source.html">c-spiffe/federation/federation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pemutil_8h_source.html">c-spiffe/internal/pemutil.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spiffeid_8h_source.html">c-spiffe/spiffeid/spiffeid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spiffetls_8h_source.html">c-spiffe/spiffetls/spiffetls.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="picohttpparser_8h_source.html">c-spiffe/utils/picohttpparser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="utils_2util_8h_source.html">c-spiffe/utils/util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="federation_8h_source.html">c-spiffe/federation/federation.h</a>&quot;</code><br />
+<code>#include &quot;openssl/ssl.h&quot;</code><br />
 <code>#include &lt;check.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for check_server.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="check__server_8c__incl.png" border="0" usemap="#afederation_2tests_2check__server_8c" alt=""/></div>
 <map name="afederation_2tests_2check__server_8c" id="afederation_2tests_2check__server_8c">
-<area shape="rect" title=" " alt="" coords="1643,5,1793,47"/>
-<area shape="rect" href="spiffebundle_8h.html" title=" " alt="" coords="817,713,1006,739"/>
-<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="1157,1301,1279,1328"/>
-<area shape="rect" href="spiffeid_8h.html" title=" " alt="" coords="247,1070,411,1097"/>
-<area shape="rect" href="spiffetls_8h.html" title=" " alt="" coords="2113,273,2227,315"/>
-<area shape="rect" href="federation_8h.html" title=" " alt="" coords="475,95,601,136"/>
-<area shape="rect" title=" " alt="" coords="2649,102,2715,129"/>
-<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="777,973,955,1015"/>
-<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="777,884,955,925"/>
-<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="726,795,905,836"/>
-<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="689,1063,854,1104"/>
-<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="568,1152,759,1179"/>
-<area shape="rect" title=" " alt="" coords="795,1152,870,1179"/>
-<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="1031,1063,1205,1104"/>
-<area shape="rect" title=" " alt="" coords="1443,1152,1551,1179"/>
-<area shape="rect" title=" " alt="" coords="1585,1070,1643,1097"/>
-<area shape="rect" href="id_8h.html" title=" " alt="" coords="914,1227,1047,1253"/>
-<area shape="rect" title=" " alt="" coords="943,1376,1018,1403"/>
-<area shape="rect" title=" " alt="" coords="5,1301,108,1328"/>
-<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="1145,1376,1291,1403"/>
-<area shape="rect" title=" " alt="" coords="1913,1376,2016,1403"/>
-<area shape="rect" title=" " alt="" coords="1093,1451,1161,1477"/>
-<area shape="rect" title=" " alt="" coords="1186,1451,1250,1477"/>
-<area shape="rect" title=" " alt="" coords="1275,1451,1337,1477"/>
-<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="425,884,550,925"/>
-<area shape="rect" title=" " alt="" coords="572,981,651,1007"/>
-<area shape="rect" href="match_8h.html" title=" " alt="" coords="996,1152,1155,1179"/>
-<area shape="rect" href="dial_8h.html" title=" " alt="" coords="2345,363,2459,404"/>
-<area shape="rect" href="mode_8h.html" title=" " alt="" coords="1924,452,2037,493"/>
-<area shape="rect" href="option_8h.html" title=" " alt="" coords="2460,452,2573,493"/>
-<area shape="rect" href="listen_8h.html" title=" " alt="" coords="2208,363,2321,404"/>
-<area shape="rect" href="peerid_8h.html" title=" " alt="" coords="2113,452,2227,493"/>
-<area shape="rect" title=" " alt="" coords="2470,549,2569,575"/>
-<area shape="rect" title=" " alt="" coords="2302,459,2385,486"/>
-<area shape="rect" href="bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="1252,541,1427,583"/>
-<area shape="rect" href="x509source_8h.html" title=" " alt="" coords="1589,631,1789,657"/>
-<area shape="rect" href="certpool_8h.html" title=" " alt="" coords="2140,1063,2299,1104"/>
-<area shape="rect" href="authorizer_8h.html" title=" " alt="" coords="1718,1063,1862,1104"/>
-<area shape="rect" href="svid_2x509svid_2source_8h.html" title=" " alt="" coords="1862,541,2009,583"/>
-<area shape="rect" href="x509bundle_2set_8h.html" title=" " alt="" coords="1284,973,1459,1015"/>
-<area shape="rect" href="x509svid_2svid_8h.html" title=" " alt="" coords="2002,973,2149,1015"/>
-<area shape="rect" href="workload_2watcher_8h.html" title=" " alt="" coords="1599,713,1779,739"/>
-<area shape="rect" href="client_8h.html" title=" " alt="" coords="1773,802,1938,829"/>
-<area shape="rect" href="x509context_8h.html" title=" " alt="" coords="1587,891,1790,918"/>
-<area shape="rect" href="jwtsvid_2svid_8h.html" title=" " alt="" coords="1836,973,1973,1015"/>
-<area shape="rect" href="backoff_8h.html" title=" " alt="" coords="1814,891,1990,918"/>
-<area shape="rect" href="federation_2watcher_8h.html" title=" " alt="" coords="374,705,499,747"/>
-<area shape="rect" href="server_8h.html" title=" " alt="" coords="626,184,751,225"/>
-<area shape="rect" href="x509svid_8h.html" title=" " alt="" coords="1319,370,1477,397"/>
-<area shape="rect" href="verify_8h.html" title=" " alt="" coords="1030,452,1177,493"/>
+<area shape="rect" title=" " alt="" coords="2126,5,2277,47"/>
+<area shape="rect" href="spiffebundle_8h.html" title=" " alt="" coords="895,281,1084,307"/>
+<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="861,884,984,911"/>
+<area shape="rect" title=" " alt="" coords="1965,1033,2027,1060"/>
+<area shape="rect" href="federation_8h.html" title=" " alt="" coords="783,95,908,136"/>
+<area shape="rect" href="spiffeid_8h.html" title=" " alt="" coords="195,638,359,665"/>
+<area shape="rect" href="spiffetls_8h.html" title=" " alt="" coords="1914,273,2027,315"/>
+<area shape="rect" title=" " alt="" coords="2109,549,2208,575"/>
+<area shape="rect" href="pemutil_8h.html" title=" " alt="" coords="2214,191,2381,218"/>
+<area shape="rect" href="picohttpparser_8h.html" title=" " alt="" coords="2378,102,2566,129"/>
+<area shape="rect" title=" " alt="" coords="2591,102,2657,129"/>
+<area shape="rect" title=" " alt="" coords="2681,102,2743,129"/>
+<area shape="rect" title=" " alt="" coords="2767,102,2827,129"/>
+<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="805,541,984,583"/>
+<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="847,452,1025,493"/>
+<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="756,363,935,404"/>
+<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="720,631,885,672"/>
+<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="506,727,697,754"/>
+<area shape="rect" title=" " alt="" coords="1081,727,1156,754"/>
+<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="1163,631,1338,672"/>
+<area shape="rect" title=" " alt="" coords="1510,809,1618,836"/>
+<area shape="rect" title=" " alt="" coords="638,638,695,665"/>
+<area shape="rect" href="id_8h.html" title=" " alt="" coords="651,809,784,836"/>
+<area shape="rect" title=" " alt="" coords="809,959,884,985"/>
+<area shape="rect" title=" " alt="" coords="319,884,422,911"/>
+<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="1351,959,1497,985"/>
+<area shape="rect" title=" " alt="" coords="1887,959,1990,985"/>
+<area shape="rect" title=" " alt="" coords="1435,1033,1503,1060"/>
+<area shape="rect" title=" " alt="" coords="1347,1033,1411,1060"/>
+<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="487,452,612,493"/>
+<area shape="rect" title=" " alt="" coords="634,549,713,575"/>
+<area shape="rect" href="federation_2watcher_8h.html" title=" " alt="" coords="455,273,580,315"/>
+<area shape="rect" href="server_8h.html" title=" " alt="" coords="927,184,1052,225"/>
+<area shape="rect" href="x509svid_8h.html" title=" " alt="" coords="1384,459,1541,486"/>
+<area shape="rect" href="match_8h.html" title=" " alt="" coords="723,727,882,754"/>
+<area shape="rect" href="dial_8h.html" title=" " alt="" coords="1914,363,2027,404"/>
+<area shape="rect" href="mode_8h.html" title=" " alt="" coords="1682,452,1795,493"/>
+<area shape="rect" href="option_8h.html" title=" " alt="" coords="2166,452,2279,493"/>
+<area shape="rect" href="listen_8h.html" title=" " alt="" coords="2051,363,2165,404"/>
+<area shape="rect" href="peerid_8h.html" title=" " alt="" coords="1819,452,1933,493"/>
+<area shape="rect" title=" " alt="" coords="2008,459,2091,486"/>
+<area shape="rect" href="bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="1435,541,1610,583"/>
+<area shape="rect" href="x509source_8h.html" title=" " alt="" coords="1464,638,1664,665"/>
+<area shape="rect" href="certpool_8h.html" title=" " alt="" coords="1875,720,2034,761"/>
+<area shape="rect" href="authorizer_8h.html" title=" " alt="" coords="1739,631,1883,672"/>
+<area shape="rect" href="svid_2x509svid_2source_8h.html" title=" " alt="" coords="1635,541,1781,583"/>
+<area shape="rect" href="x509svid_2svid_8h.html" title=" " alt="" coords="1491,720,1637,761"/>
+<area shape="rect" href="pem_8h.html" title=" " alt="" coords="2135,720,2291,761"/>
+<area shape="rect" title=" " alt="" coords="2160,809,2267,836"/>
+<area shape="rect" title=" " alt="" coords="2457,191,2543,218"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -143,10 +149,12 @@ Functions</h2></td></tr>
 <tr class="separator:adfa659e83eaa47b7bdcb3c6f627391ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a996f35ce2f4aaeff70f0bcabf0596a69"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#a996f35ce2f4aaeff70f0bcabf0596a69">START_TEST</a> (test_spiffebundle_EndpointServer_New_Free)</td></tr>
 <tr class="separator:a996f35ce2f4aaeff70f0bcabf0596a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a269fff949655156584c9d6cc01006059"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#a269fff949655156584c9d6cc01006059">START_TEST</a> (test_spiffebundle_EndpointServer_RegisterBundle)</td></tr>
-<tr class="separator:a269fff949655156584c9d6cc01006059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2981de3ded3dd593a32a1ca9ae3be923"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#a2981de3ded3dd593a32a1ca9ae3be923">START_TEST</a> (test_spiffebundle_EndpointServer_AddEndpoints)</td></tr>
-<tr class="separator:a2981de3ded3dd593a32a1ca9ae3be923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d08d17d22d6c739c380c6adfdd00ebb"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#a4d08d17d22d6c739c380c6adfdd00ebb">START_TEST</a> (test_spiffebundle_EndpointServer_BundleFunctions)</td></tr>
+<tr class="separator:a4d08d17d22d6c739c380c6adfdd00ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa168acf02be2ecd0639435f1e0352304"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#aa168acf02be2ecd0639435f1e0352304">START_TEST</a> (test_spiffebundle_EndpointServer_EndpointFunctions)</td></tr>
+<tr class="separator:aa168acf02be2ecd0639435f1e0352304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae728b67f926f74a1cfe80cb2357b9e5f"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#ae728b67f926f74a1cfe80cb2357b9e5f">START_TEST</a> (test_spiffebundle_EndpointServer_ServeFunctions)</td></tr>
+<tr class="separator:ae728b67f926f74a1cfe80cb2357b9e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02ead279088d60205a5cfaa8ef37f4f"><td class="memItemLeft" align="right" valign="top">END_TEST Suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#af02ead279088d60205a5cfaa8ef37f4f">endpoint_server_suite</a> (void)</td></tr>
 <tr class="separator:af02ead279088d60205a5cfaa8ef37f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__server_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
@@ -200,7 +208,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="adfa659e83eaa47b7bdcb3c6f627391ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfa659e83eaa47b7bdcb3c6f627391ed">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa659e83eaa47b7bdcb3c6f627391ed">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,8 +225,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2981de3ded3dd593a32a1ca9ae3be923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2981de3ded3dd593a32a1ca9ae3be923">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[2/4]</span></h2>
+<a id="a4d08d17d22d6c739c380c6adfdd00ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d08d17d22d6c739c380c6adfdd00ebb">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +234,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">END_TEST START_TEST </td>
           <td>(</td>
-          <td class="paramtype">test_spiffebundle_EndpointServer_AddEndpoints&#160;</td>
+          <td class="paramtype">test_spiffebundle_EndpointServer_BundleFunctions&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa168acf02be2ecd0639435f1e0352304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa168acf02be2ecd0639435f1e0352304">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_spiffebundle_EndpointServer_EndpointFunctions&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -236,7 +262,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a996f35ce2f4aaeff70f0bcabf0596a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a996f35ce2f4aaeff70f0bcabf0596a69">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a996f35ce2f4aaeff70f0bcabf0596a69">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,8 +279,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a269fff949655156584c9d6cc01006059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269fff949655156584c9d6cc01006059">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[4/4]</span></h2>
+<a id="ae728b67f926f74a1cfe80cb2357b9e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae728b67f926f74a1cfe80cb2357b9e5f">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +288,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">END_TEST START_TEST </td>
           <td>(</td>
-          <td class="paramtype">test_spiffebundle_EndpointServer_RegisterBundle&#160;</td>
+          <td class="paramtype">test_spiffebundle_EndpointServer_ServeFunctions&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

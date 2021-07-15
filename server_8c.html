@@ -75,65 +75,68 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="server_8h_source.html">c-spiffe/federation/server.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="picohttpparser_8h_source.html">../utils/picohttpparser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="spiffetls_8h_source.html">c-spiffe/spiffetls/spiffetls.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="picohttpparser_8h_source.html">c-spiffe/utils/picohttpparser.h</a>&quot;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;sys/un.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for server.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="server_8c__incl.png" border="0" usemap="#afederation_2server_8c" alt=""/></div>
 <map name="afederation_2server_8c" id="afederation_2server_8c">
-<area shape="rect" title=" " alt="" coords="2333,5,2462,32"/>
-<area shape="rect" href="server_8h.html" title=" " alt="" coords="760,80,885,121"/>
-<area shape="rect" title=" " alt="" coords="1954,1332,2017,1359"/>
-<area shape="rect" href="picohttpparser_8h.html" title=" " alt="" coords="2321,87,2473,114"/>
-<area shape="rect" title=" " alt="" coords="2497,87,2559,114"/>
-<area shape="rect" title=" " alt="" coords="2583,87,2643,114"/>
-<area shape="rect" href="spiffebundle_8h.html" title=" " alt="" coords="539,601,728,628"/>
-<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="1476,1183,1599,1209"/>
-<area shape="rect" title=" " alt="" coords="2093,1183,2195,1209"/>
-<area shape="rect" title=" " alt="" coords="443,1033,517,1060"/>
-<area shape="rect" title=" " alt="" coords="1182,1033,1290,1060"/>
-<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="303,765,428,807"/>
-<area shape="rect" title=" " alt="" coords="706,862,785,889"/>
-<area shape="rect" href="spiffeid_8h.html" title=" " alt="" coords="1677,951,1841,978"/>
-<area shape="rect" href="spiffetls_8h.html" title=" " alt="" coords="1183,169,1297,211"/>
-<area shape="rect" href="x509svid_8h.html" title=" " alt="" coords="1561,266,1719,293"/>
-<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="503,855,681,896"/>
-<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="503,765,681,807"/>
-<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="403,676,581,717"/>
-<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="397,944,563,985"/>
-<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="833,1033,1023,1060"/>
-<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="841,944,1015,985"/>
-<area shape="rect" title=" " alt="" coords="1442,951,1499,978"/>
-<area shape="rect" href="id_8h.html" title=" " alt="" coords="1757,1108,1891,1135"/>
-<area shape="rect" title=" " alt="" coords="1787,1257,1861,1284"/>
-<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="1479,1257,1625,1284"/>
-<area shape="rect" title=" " alt="" coords="1655,1257,1758,1284"/>
-<area shape="rect" title=" " alt="" coords="1563,1332,1631,1359"/>
-<area shape="rect" title=" " alt="" coords="1475,1332,1539,1359"/>
-<area shape="rect" href="match_8h.html" title=" " alt="" coords="1601,1033,1759,1060"/>
-<area shape="rect" href="dial_8h.html" title=" " alt="" coords="1253,259,1366,300"/>
-<area shape="rect" href="mode_8h.html" title=" " alt="" coords="1021,348,1134,389"/>
-<area shape="rect" href="option_8h.html" title=" " alt="" coords="1317,348,1430,389"/>
-<area shape="rect" href="listen_8h.html" title=" " alt="" coords="1115,259,1229,300"/>
-<area shape="rect" href="peerid_8h.html" title=" " alt="" coords="1557,348,1670,389"/>
-<area shape="rect" title=" " alt="" coords="1328,445,1427,471"/>
-<area shape="rect" title=" " alt="" coords="1209,355,1292,382"/>
-<area shape="rect" href="bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="1451,437,1626,479"/>
-<area shape="rect" href="x509source_8h.html" title=" " alt="" coords="1131,527,1331,553"/>
-<area shape="rect" href="certpool_8h.html" title=" " alt="" coords="1039,944,1198,985"/>
-<area shape="rect" href="authorizer_8h.html" title=" " alt="" coords="1273,944,1417,985"/>
-<area shape="rect" href="svid_2x509svid_2source_8h.html" title=" " alt="" coords="1157,437,1304,479"/>
-<area shape="rect" href="x509bundle_2set_8h.html" title=" " alt="" coords="1141,855,1315,896"/>
-<area shape="rect" href="x509svid_2svid_8h.html" title=" " alt="" coords="1579,855,1725,896"/>
-<area shape="rect" href="workload_2watcher_8h.html" title=" " alt="" coords="1147,601,1327,628"/>
-<area shape="rect" href="client_8h.html" title=" " alt="" coords="1252,683,1417,710"/>
-<area shape="rect" href="x509context_8h.html" title=" " alt="" coords="1164,773,1367,799"/>
-<area shape="rect" href="jwtsvid_2svid_8h.html" title=" " alt="" coords="1417,855,1554,896"/>
-<area shape="rect" href="verify_8h.html" title=" " alt="" coords="1745,348,1892,389"/>
-<area shape="rect" title=" " alt="" coords="2354,177,2441,203"/>
+<area shape="rect" title=" " alt="" coords="2426,5,2555,32"/>
+<area shape="rect" href="server_8h.html" title=" " alt="" coords="652,80,777,121"/>
+<area shape="rect" title=" " alt="" coords="1645,1108,1707,1135"/>
+<area shape="rect" href="spiffetls_8h.html" title=" " alt="" coords="1829,169,1942,211"/>
+<area shape="rect" href="picohttpparser_8h.html" title=" " alt="" coords="2322,87,2510,114"/>
+<area shape="rect" title=" " alt="" coords="2535,87,2596,114"/>
+<area shape="rect" title=" " alt="" coords="2621,87,2681,114"/>
+<area shape="rect" title=" " alt="" coords="2705,87,2799,114"/>
+<area shape="rect" title=" " alt="" coords="2823,87,2894,114"/>
+<area shape="rect" href="spiffebundle_8h.html" title=" " alt="" coords="465,355,655,382"/>
+<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="1200,959,1323,985"/>
+<area shape="rect" title=" " alt="" coords="1986,959,2089,985"/>
+<area shape="rect" title=" " alt="" coords="544,802,619,829"/>
+<area shape="rect" title=" " alt="" coords="765,884,873,911"/>
+<area shape="rect" href="endpoint_8h.html" title=" " alt="" coords="451,527,576,568"/>
+<area shape="rect" title=" " alt="" coords="246,623,325,650"/>
+<area shape="rect" href="spiffeid_8h.html" title=" " alt="" coords="1342,713,1506,739"/>
+<area shape="rect" href="x509svid_8h.html" title=" " alt="" coords="1384,266,1541,293"/>
+<area shape="rect" href="spiffebundle_2bundle_8h.html" title=" " alt="" coords="492,616,671,657"/>
+<area shape="rect" href="spiffebundle_2set_8h.html" title=" " alt="" coords="195,527,373,568"/>
+<area shape="rect" href="bundle_2spiffebundle_2source_8h.html" title=" " alt="" coords="448,437,627,479"/>
+<area shape="rect" href="jwtbundle_2bundle_8h.html" title=" " alt="" coords="499,705,664,747"/>
+<area shape="rect" href="trustdomain_8h.html" title=" " alt="" coords="857,802,1047,829"/>
+<area shape="rect" href="x509bundle_2bundle_8h.html" title=" " alt="" coords="739,705,914,747"/>
+<area shape="rect" title=" " alt="" coords="990,713,1047,739"/>
+<area shape="rect" href="id_8h.html" title=" " alt="" coords="1544,884,1677,911"/>
+<area shape="rect" title=" " alt="" coords="1844,1033,1919,1060"/>
+<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="1265,1033,1410,1060"/>
+<area shape="rect" title=" " alt="" coords="1622,1033,1725,1060"/>
+<area shape="rect" title=" " alt="" coords="1349,1108,1417,1135"/>
+<area shape="rect" title=" " alt="" coords="1260,1108,1324,1135"/>
+<area shape="rect" href="match_8h.html" title=" " alt="" coords="1306,802,1465,829"/>
+<area shape="rect" href="dial_8h.html" title=" " alt="" coords="1829,259,1942,300"/>
+<area shape="rect" href="mode_8h.html" title=" " alt="" coords="1495,348,1609,389"/>
+<area shape="rect" href="option_8h.html" title=" " alt="" coords="1893,348,2006,389"/>
+<area shape="rect" href="listen_8h.html" title=" " alt="" coords="1691,259,1805,300"/>
+<area shape="rect" href="peerid_8h.html" title=" " alt="" coords="2082,348,2195,389"/>
+<area shape="rect" title=" " alt="" coords="1973,445,2072,471"/>
+<area shape="rect" title=" " alt="" coords="1785,355,1868,382"/>
+<area shape="rect" href="bundle_2x509bundle_2source_8h.html" title=" " alt="" coords="1249,437,1423,479"/>
+<area shape="rect" href="x509source_8h.html" title=" " alt="" coords="1325,534,1525,561"/>
+<area shape="rect" href="certpool_8h.html" title=" " alt="" coords="1123,795,1282,836"/>
+<area shape="rect" href="authorizer_8h.html" title=" " alt="" coords="1173,705,1317,747"/>
+<area shape="rect" href="svid_2x509svid_2source_8h.html" title=" " alt="" coords="1752,437,1899,479"/>
+<area shape="rect" href="x509bundle_2set_8h.html" title=" " alt="" coords="1094,616,1269,657"/>
+<area shape="rect" href="x509svid_2svid_8h.html" title=" " alt="" coords="1711,795,1857,836"/>
+<area shape="rect" href="workload_2watcher_8h.html" title=" " alt="" coords="1345,623,1525,650"/>
+<area shape="rect" href="client_8h.html" title=" " alt="" coords="1581,713,1747,739"/>
+<area shape="rect" href="verify_8h.html" title=" " alt="" coords="1324,348,1471,389"/>
+<area shape="rect" title=" " alt="" coords="2373,177,2459,203"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -178,12 +181,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a06f0e16aac7e5af3b1caf8c4f493b303"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a06f0e16aac7e5af3b1caf8c4f493b303">HTTP_OK</a> = &quot;HTTP/1.1 200 OK\n&quot;</td></tr>
-<tr class="separator:a06f0e16aac7e5af3b1caf8c4f493b303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e06f46a9f04303a495e969c6d5ccd1d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a5e06f46a9f04303a495e969c6d5ccd1d">HTTP_NOTFOUND</a> = &quot;HTTP/1.1 404 Not Found\n&quot;</td></tr>
-<tr class="separator:a5e06f46a9f04303a495e969c6d5ccd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1130a5ca794b3294ba12685daf0a6db"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aa1130a5ca794b3294ba12685daf0a6db">HTTP_METHODNOTALLOWED</a> = &quot;HTTP/1.1 405 Method Not Allowed\n&quot;</td></tr>
-<tr class="separator:aa1130a5ca794b3294ba12685daf0a6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928261a21d2483d8274957788f4977c1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a928261a21d2483d8274957788f4977c1">HTTP_OK</a> = &quot;HTTP/1.1 200 OK\r\n&quot;</td></tr>
+<tr class="separator:a928261a21d2483d8274957788f4977c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae5eda9e3d6365cd65671e7a5a822d5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a1ae5eda9e3d6365cd65671e7a5a822d5">HTTP_NOTFOUND</a> = &quot;HTTP/1.1 404 Not Found\r\n&quot;</td></tr>
+<tr class="separator:a1ae5eda9e3d6365cd65671e7a5a822d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf63f15586256312163828087fcdb63b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abf63f15586256312163828087fcdb63b">HTTP_METHODNOTALLOWED</a> = &quot;HTTP/1.1 405 Method Not Allowed\r\n&quot;</td></tr>
+<tr class="separator:abf63f15586256312163828087fcdb63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a86adc3ecdbf479787e1d6ba6d2d7694a"></a>
@@ -201,6 +204,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>POLL received signal</p>
 <p>LOG: log request @ which level?</p>
 <p>LOG: server response, code, time</p>
 
@@ -599,7 +603,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>TODO: validate non-svid</p>
-<p>TODO: set listen mode with x509* and EVP_PKEY* params.</p>
 
 </div>
 </div>
@@ -724,42 +727,42 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aa1130a5ca794b3294ba12685daf0a6db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1130a5ca794b3294ba12685daf0a6db">&#9670;&nbsp;</a></span>HTTP_METHODNOTALLOWED</h2>
+<a id="abf63f15586256312163828087fcdb63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf63f15586256312163828087fcdb63b">&#9670;&nbsp;</a></span>HTTP_METHODNOTALLOWED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* HTTP_METHODNOTALLOWED = &quot;HTTP/1.1 405 Method Not Allowed\n&quot;</td>
+          <td class="memname">char* HTTP_METHODNOTALLOWED = &quot;HTTP/1.1 405 Method Not Allowed\r\n&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5e06f46a9f04303a495e969c6d5ccd1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e06f46a9f04303a495e969c6d5ccd1d">&#9670;&nbsp;</a></span>HTTP_NOTFOUND</h2>
+<a id="a1ae5eda9e3d6365cd65671e7a5a822d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae5eda9e3d6365cd65671e7a5a822d5">&#9670;&nbsp;</a></span>HTTP_NOTFOUND</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* HTTP_NOTFOUND = &quot;HTTP/1.1 404 Not Found\n&quot;</td>
+          <td class="memname">char* HTTP_NOTFOUND = &quot;HTTP/1.1 404 Not Found\r\n&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a06f0e16aac7e5af3b1caf8c4f493b303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f0e16aac7e5af3b1caf8c4f493b303">&#9670;&nbsp;</a></span>HTTP_OK</h2>
+<a id="a928261a21d2483d8274957788f4977c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928261a21d2483d8274957788f4977c1">&#9670;&nbsp;</a></span>HTTP_OK</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* HTTP_OK = &quot;HTTP/1.1 200 OK\n&quot;</td>
+          <td class="memname">char* HTTP_OK = &quot;HTTP/1.1 200 OK\r\n&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
