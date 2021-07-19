@@ -1,7 +1,7 @@
 name: Create a Release
 on: 
   pull_request_target:
-
+    types: [closed]
 jobs:
   build:
     runs-on: ubuntu-latest
