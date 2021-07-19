@@ -279,6 +279,43 @@ START_TEST(test_spiffebundle_Watcher_GetStatus)
 }
 END_TEST
 
+START_TEST(test_spiffebundle_Watcher_GetStatus)
+{
+    spiffebundle_Watcher *watcher = spiffebundle_Watcher_New();
+
+    spiffeid_TrustDomain td = { "example.org" };
+    err_t err;
+    int running_status = spiffebundle_Watcher_GetStatus(NULL, td, &err);
+    ck_assert_uint_eq(err, ERROR1);
+    ck_assert_int_eq(running_status, -3);
+
+    spiffeid_TrustDomain null_td = { NULL };
+    running_status = spiffebundle_Watcher_GetStatus(watcher, null_td, &err);
+    ck_assert_uint_eq(err, ERROR2);
+    ck_assert_int_eq(running_status, -3);
+
+    running_status = spiffebundle_Watcher_GetStatus(watcher, td, &err);
+    ck_assert_uint_eq(err, ERROR3);
+    ck_assert_int_eq(running_status, -3);
+    
+    const char url[] = "https://example.org";
+    err = spiffebundle_Watcher_AddHttpsWebEndpoint(watcher, url, td);
+    ck_assert_uint_eq(err, NO_ERROR);
+    
+    const int idx = shgeti(watcher->endpoints, td.name);
+    running_status = spiffebundle_Watcher_GetStatus(watcher, td, &err);
+    ck_assert_uint_eq(err, NO_ERROR);
+    ck_assert_int_eq(running_status, 0);
+    
+    watcher->endpoints[idx].value->running = 99;
+    running_status = spiffebundle_Watcher_GetStatus(watcher, td, &err);
+    ck_assert_uint_eq(err, NO_ERROR);
+    ck_assert_int_eq(running_status, 99);
+
+    spiffebundle_Watcher_Free(watcher);
+}
+END_TEST
+
 Suite *watcher_suite(void)
 {
     Suite *s = suite_create("spiffebundle_watcher");
