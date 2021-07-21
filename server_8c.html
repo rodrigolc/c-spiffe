@@ -174,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3fd718f62d76d678d20f7634ba95e856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0029889dadf97212042eecd4b4163469"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a0029889dadf97212042eecd4b4163469">write_HTTPS</a> (SSL *conn, const char *response, const char **headers, size_t num_headers, const char *content)</td></tr>
 <tr class="separator:a0029889dadf97212042eecd4b4163469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3946f44dd3a611ad125b30141cdb1f7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a3946f44dd3a611ad125b30141cdb1f7c">serve_HTTPS</a> (SSL *conn, <a class="el" href="structspiffebundle__EndpointServer.html">spiffebundle_EndpointServer</a> *server)</td></tr>
+<tr class="separator:a3946f44dd3a611ad125b30141cdb1f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86adc3ecdbf479787e1d6ba6d2d7694a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a86adc3ecdbf479787e1d6ba6d2d7694a">serve_function</a> (void *arg)</td></tr>
 <tr class="separator:a86adc3ecdbf479787e1d6ba6d2d7694a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abccddbde26f1fb55c582e2a0c2cdcba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abccddbde26f1fb55c582e2a0c2cdcba7">spiffebundle_EndpointServer_ServeEndpoint</a> (<a class="el" href="structspiffebundle__EndpointServer.html">spiffebundle_EndpointServer</a> *server, const char *base_url, uint port)</td></tr>
@@ -302,6 +304,34 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>LOG:</p>
+
+</div>
+</div>
+<a id="a3946f44dd3a611ad125b30141cdb1f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3946f44dd3a611ad125b30141cdb1f7c">&#9670;&nbsp;</a></span>serve_HTTPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#a5362d878a3b55147d5cfd29820512556">err_t</a> serve_HTTPS </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structspiffebundle__EndpointServer.html">spiffebundle_EndpointServer</a> *&#160;</td>
+          <td class="paramname"><em>server</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <p>LOG: ERROR</p>
 <p>LOG: log request @ which level?</p>
 <p>LOG: server response, code, time</p>
